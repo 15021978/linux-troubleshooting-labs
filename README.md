@@ -1,32 +1,47 @@
 🛠️ Linux Troubleshooting Labs
 
-Repositório com laboratórios práticos de troubleshooting em Linux, focado em cenários reais de administração de sistemas.
-
-🎯 Objetivo
-
-Demonstrar habilidades práticas em:
-	•	Diagnóstico de falhas em serviços
-	•	Análise de portas e processos
-	•	Uso de ferramentas como ss, fuser, kill
-	•	Resolução de problemas como um sysadmin
-
-🧪 Labs disponíveis
-Lab                      Descrição
-Port Conflict            Serviço não sobe devido a porta ocupada
+Hands-on Linux troubleshooting labs focused on real-world system administration and security scenarios.
 
 
-🧠 Skills demonstradas
-	•	Linux troubleshooting
-	•	Process management
-	•	Network diagnostics
-	•	Problem solving
+🎯 Objective
 
-🚀 Em progresso
-	•	systemd troubleshooting
-	•	journalctl analysis
-	•	firewall debugging
-	•	DNS troubleshooting
+Build and demonstrate practical skills in Linux administration, troubleshooting, and foundational cybersecurity concepts.
 
-⸻
 
-💡 Este repositório faz parte da minha jornada em Linux e Cybersecurity.
+🧪 Available Labs
+
+Lab 				Description 
+Port Conflict  		Service fails to start due to a port already in use 
+
+
+🧠 Skills Demonstrated
+
+- Linux troubleshooting  
+- Process and service management  
+- Network diagnostics (ports, services)  
+- Problem-solving in real-world scenarios  
+
+
+🔐 Security Perspective
+
+These labs also reflect foundational security practices, including:
+
+- Understanding service behavior and failures  
+- Identifying unexpected processes and port usage  
+- Applying a defensive and investigative mindset  
+
+
+🚀 In Progress
+
+- systemd troubleshooting  
+- journalctl log analysis  
+- firewall configuration and debugging  
+- DNS troubleshooting  
+
+
+💼 Professional Focus
+
+Currently focused on building strong Linux system administration skills as a foundation for a career in cybersecurity and IT infrastructure.
+
+
+💡 This repository documents my hands-on learning journey and practical labs.
