@@ -145,3 +145,23 @@ A sysadmin approach usually follows this sequence:
 	4.	Apply the fix
 	5.	Validate the result
 
+
+## Screenshots
+
+### Service start failure
+![Service start failure](screenshots/01-address-already-in-use.png)
+
+---
+
+### Port inspection with ss
+![Port inspection with ss](screenshots/02-ss-port-check.png)
+
+---
+
+### Process identification with fuser
+![Process identification with fuser](screenshots/03-fuser-process.png)
+
+---
+
+### Resolving the issue and restarting the service
+![Resolved port conflict](screenshots/04-resolved-port-conflict.png)
