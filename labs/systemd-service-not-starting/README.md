@@ -41,10 +41,59 @@ This is a common troubleshooting scenario in Linux system administration, infras
 
 This lab uses a simple Python HTTP server managed by `systemd`.
 
-Create the service file:
+### Step 0 — Environment preparation
+
+Ensure you have sudo privileges:
 
 ```bash
+whoami
+```
+
+If needed:
+
+```
+sudo -i
+```
+
+### Step 1 — Create the systemd service file
+
+```
 sudo nano /etc/systemd/system/myweb.service
+```
+
+Add the following configuration:
+
+```
+[Unit]
+Description=Simple Python Web Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 -m http.server 8090
+WorkingDirectory=/tmp
+Restart=on-failure
+User=nobody
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Step 2 — Reload systemd
+
+```
+sudo systemctl daemon-reload
+```
+
+### Step 3 — Start the service
+
+```
+sudo systemctl start myweb.service
+```
+
+### Step 4 — Check service status
+
+```
+sudo systemctl status myweb.service
 ```
 
 ---
@@ -52,24 +101,24 @@ sudo nano /etc/systemd/system/myweb.service
 ## Screenshots
 
 ### Initial service status
-![Initial service status](screenshots/01-systemctl-status-initial.png)
+screenshots/01-systemctl-status-initial.png
 
 ---
 
 ### Service failure after misconfiguration
-![Service failure](screenshots/02-systemctl-status-failed.png)
+screenshots/02-systemctl-status-failed.png
 
 ---
 
 ### Error details in journalctl
-![Journalctl error](screenshots/03-journalctl-error.png)
+screenshots/03-journalctl-error.png
 
 ---
 
 ### Service running after fix
-![Service running](screenshots/04-systemctl-running.png)
+screenshots/04-systemctl-running.png
 
 ---
 
 ### Port validation with ss
-![Port validation](screenshots/05-ss-port-8090.png)
+screenshots/05-ss-port-8090.png
