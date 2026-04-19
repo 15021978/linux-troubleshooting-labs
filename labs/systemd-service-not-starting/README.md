@@ -101,24 +101,24 @@ sudo systemctl status myweb.service
 ## Screenshots
 
 ### Initial service status
-screenshots/01-systemctl-status-initial.png
+screenshots:01-systemctl-status-initial.png
 
 ---
 
 ### Service failure after misconfiguration
-screenshots/02-systemctl-status-failed.png
+screenshots:02-systemctl-status-failed.png
 
 ---
 
 ### Error details in journalctl
-screenshots/03-journalctl-error.png
+screenshots:03-journalctl-error.png
 
 ---
 
 ### Service running after fix
-screenshots/04-systemctl-running.png
+screenshots:04-systemctl-running.png
 
 ---
 
 ### Port validation with ss
-screenshots/05-ss-port-8090.png
+screenshots:05-ss-port-8090.png
