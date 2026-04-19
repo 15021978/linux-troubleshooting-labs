@@ -47,3 +47,29 @@ Create the service file:
 sudo nano /etc/systemd/system/myweb.service
 ```
 
+---
+
+## Screenshots
+
+### Initial service status
+![Initial service status](screenshots/01-systemctl-status-initial.png)
+
+---
+
+### Service failure after misconfiguration
+![Service failure](screenshots/02-systemctl-status-failed.png)
+
+---
+
+### Error details in journalctl
+![Journalctl error](screenshots/03-journalctl-error.png)
+
+---
+
+### Service running after fix
+![Service running](screenshots/04-systemctl-running.png)
+
+---
+
+### Port validation with ss
+![Port validation](screenshots/05-ss-port-8090.png)
