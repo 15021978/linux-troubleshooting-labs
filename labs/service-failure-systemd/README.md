@@ -205,18 +205,17 @@ This lab supports the following project listed in my CV:
 ## Linux Service Troubleshooting & Incident Recovery
 
 
-# 📄 `service_status.sh`
+## Helper Script
+
+This lab includes a helper script named `service_status.sh` that displays:
+
+- Service status using `systemctl`
+- Recent logs using `journalctl`
+
+Example usage:
 
 ```bash
-#!/bin/bash
-set -euo pipefail
-
-SERVICE="${1:-myapp.service}"
-
-echo "Checking status for service: ${SERVICE}"
-systemctl status "${SERVICE}" --no-pager || true
-
-echo
-echo "Recent logs:"
-journalctl -u "${SERVICE}" -n 30 --no-pager || true
+./service_status.sh
+./service_status.sh ssh
 ```
+
