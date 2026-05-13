@@ -1,6 +1,3 @@
----
-
-# 📄 `service_status.sh`
 
 ```bash
 #!/bin/bash
