@@ -1,5 +1,3 @@
-
-```bash
 #!/bin/bash
 set -euo pipefail
 
@@ -11,4 +9,4 @@ systemctl status "${SERVICE}" --no-pager || true
 echo
 echo "Recent logs:"
 journalctl -u "${SERVICE}" -n 30 --no-pager || true
-```
+
